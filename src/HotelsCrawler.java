@@ -92,7 +92,7 @@ public class HotelsCrawler {
 				if(hotel_reviews.length()==0) hotel_reviews = "not available";  //if no reviews available, indicate by -1
 				Elements hotel_href_ele = hotel_container.select("h3.p-name > a[href]");
 				String hotel_href = hotel_href_ele.attr("href");
-				String hotel_link = "https://hotels.com" + hotel_href;
+				String hotel_link = "https://____.com" + hotel_href;
 				//System.out.println(hotel_name + ": " + hotel_price + "  rating: "+ hotel_rating + "  " + hotel_reviews);
 				//System.out.println(hotel_link);
 				if(!(hotels_names.contains(hotel_name))){
