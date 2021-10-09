@@ -1,0 +1,34 @@
+Test Cases
+
+input: San Francisco/ Los Angelas/ Las Vegas/ San Diego	
+expected output: San Francisco, Las Vegas, Los Angelas, San Diego
+
+input: Hamilton,CA/ Ottawa/ Toronto/ Oshawa/ Montreal						
+expected output: Hamilton, Toronto, Oshawa, Ottawa, Montreal
+
+input: Adelaide,SA/ Barossa Valley,SA/ Clare,SA/ Connawarra,SA/ McLaren Vale,SA/ Adelaide,SA
+expected output: Adelaide,SA, McLaren Vale,SA, Connawarra,SA, Barossa Valley,SA, Clare,SA, Adelaide,SA
+
+input: Zurich/ Interlaken/ Lucerne/ Montreux
+expected output: Zurich, Lucerne, Interlaken, Montreux
+
+input: Tuscany/ Milan/ Rome/ Venice/ Naples
+expected output: Tuscany, Venice, Milan, Rome, Naples
+
+input: Zurich/ Lucerne/ Lauterbrunnen/ Interlaken/ Lugano/ Zermatt/ Vevey/ Bern/ Montreux/ Zurich
+expected output: fail to display
+
+input: 
+Zurich/ Lucerne/ Lauterbrunnen/ Interlaken/ Lugano/ Zermatt/ Vevey/ Montreux/ Zurich
+2019-3-28
+2019-4-9
+[1, 2, 1, 1, 2, 1, 1, 1, 2]
+[1, 2, 0, 1, 2, 0, 2, 2, 2]
+expected output: Zurich, Lucerne, Lauterbrunnen, Interlaken, Vevey, Montreux, Zermatt, Lugano, Zurich
+
+input:
+Switzerland
+Milan/ Venice/ Tuscany/ Rome/ Naples/ Monaco/ Milan
+2019-6-26
+2019-7-6
+[1, 2, 2, 1, 1, 2, 1]

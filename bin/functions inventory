@@ -1,0 +1,24 @@
+int locate_Excel_sheet(String sheet_name) {
+	try {
+		FileInputStream fileIn = new FileInputStream("trip.xls");
+		Workbook wb = WorkbookFactory.create (fileIn);
+		int sheets_num = wb.getNumberOfSheets();
+		if(sheets_num==0) {
+			System.out.println("cannot check if a sheet exists: no sheets at all in trip.xls");
+			return -1;
+		}
+		for(int i=0;i<sheets_num;i++) {
+			if(wb.getSheetName(i).equals(sheet_name)) {
+				System.out.printf("sheet located: at index %d \n",i);
+				return i;
+			}
+		}
+		wb.close();
+		//System.out.printf("cannot locate excel sheet: %s\n",sheet_name);
+		return -1;
+	}catch(Exception e){
+		System.out.println("fail to check if a sheet exists");
+		e.printStackTrace();
+		return -1;
+	}
+}
