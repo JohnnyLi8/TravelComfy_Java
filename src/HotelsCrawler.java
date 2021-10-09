@@ -155,7 +155,7 @@ public class HotelsCrawler {
 			if(hotel_reviews.length()==0) hotel_reviews = "0";
 			Elements hotel_href_ele = hotel_container.select("h3.p-name > a[href]");
 			String hotel_href = hotel_href_ele.attr("href");
-			String hotel_link = "https://hotels.com" + hotel_href; //link string
+			String hotel_link = "https://_____.com" + hotel_href; //link string
 			//System.out.println(hotel_name + ": " + hotel_price + "  rating: "+ hotel_rating + "  " + hotel_reviews);
 			//System.out.println(hotel_link);
 			hotels_names.add(hotel_name); hotels_prices.add(hotel_price); hotels_ratings.add(hotel_rating); hotels_reviews.add(hotel_reviews); hotels_links.add(hotel_link);
